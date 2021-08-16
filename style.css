@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+:root {
+    --primary: rgb(245, 106, 129);
+    --secondary: rgb(87, 163, 250); 
+  }
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Poppins';
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* End of reset */
+
+/* MAIN CONTAINER */
+main {
+    background-color: var(--primary);
+}
+
+/* CONTENT CONTAINER */
+.cat-container {
+    width: 90%;
+    min-height: 100vh;
+    max-height: 100%;
+    padding: 2rem 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    column-gap: 5rem;
+}
+
+
+/* Logo */
+h1 {
+    width: min-content;
+    padding: 0 5% 5% 5%;
+    margin: 0 auto;
+    color: var(--primary);
+    font-family: 'Gloria Hallelujah';
+    font-size: clamp(8rem, 10vw, 10rem);
+    text-align: center;
+    line-height: .9;
+    -webkit-text-stroke: .2px white;
+    background-color: var(--secondary);
+    border-radius: 50px;
+    box-shadow: -5px 10px 5px #27272785;
+}
+
+.h1-custom {
+    display: block;
+    font-size: clamp(5rem, 6vw, 8rem);
+}
+
+/* Cat Image */
+.cat-img {
+    margin: 0 auto;
+    border-radius: 50px;
+    box-shadow: -5px 10px 5px #27272785;
+}
+
+/* Cat Call to action and Counter */
+.cat-CTA {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.cat-counter {  
+    font-size: 8rem;
+    margin: 0 auto;
+}
